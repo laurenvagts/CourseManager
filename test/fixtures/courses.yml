@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Computer Science 1
+  department: Computer Science
+  number: 101
+  credithours: 4
+
+two:
+  name: Operating Systems
+  department: Computer Science
+  number: 360
+  credithours: 8
