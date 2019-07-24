@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get "course" => 'courses#index'
-  get "section" => 'sections#index'
+ # get "course" => 'courses#index'
+ # get "section" => 'sections#index'
+
   resources :courses do
     collection do
       get 'search'
