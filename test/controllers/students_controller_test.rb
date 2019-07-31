@@ -10,6 +10,10 @@ class StudentsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "shouldn't find a missing student" do
+    assert Course.where("name like ?", "Bob").length == 0
+  end
+
   test "should get new" do
     get new_student_url
     assert_response :success

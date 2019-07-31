@@ -10,6 +10,10 @@ class SectionsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "shouldn't find a missing section" do
+    assert Course.where("name like ?", "Bob").length == 0
+  end
+
   test "should get new" do
     get new_section_url
     assert_response :success
