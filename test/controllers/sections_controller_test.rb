@@ -11,7 +11,7 @@ class SectionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "shouldn't find a missing section" do
-    assert Course.where("name like ?", "Bob").length == 0
+    assert Section.where("number like ?", "7").length == 0
   end
 
   test "should get new" do

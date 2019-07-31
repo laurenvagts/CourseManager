@@ -11,7 +11,7 @@ class StudentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "shouldn't find a missing student" do
-    assert Course.where("name like ?", "Bob").length == 0
+    assert Student.where("name like ?", "Bob").length == 0
   end
 
   test "should get new" do
